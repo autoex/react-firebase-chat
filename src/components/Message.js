@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css'
 
-const App = () => {
+const Message = () => {
     return (
         <div>
-
+            
         </div>
     );
 };
 
-export default App;
+export default Message;
