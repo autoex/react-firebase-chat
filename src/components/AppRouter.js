@@ -3,8 +3,8 @@ import {Redirect, Route, Switch} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "./routes";
 import {CHAT_ROUTE} from "../utils/consts";
 
-const AppRouter = () => {
-    const userAuth = useState(true);
+const AppRouter = ({userAuth}) => {
+
     return (
         <div>
             {userAuth ?
