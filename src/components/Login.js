@@ -10,25 +10,14 @@ const Login = () => {
     const {auth} = useContext(Context);
 
     const login = async () => {
-        const provider =  new firebase.auth.GoogleAuthProvider();
+        const provider = new firebase.auth.GoogleAuthProvider();
         const {user} = await auth.signInWithPopup(provider);
         console.log(user)
     }
     return (
-        <Container>
-            <Grid container
-                  style={{height: window.innerHeight - 50}}
-                  alignItems={'center'}
-                  justify={'center'}
-            >
 
-                <Grid>
-                    <Box p={5}>
-                        <Button onClick={login} variant={'outlined'}>Enter with Google</Button>
-                    </Box>
-                </Grid>
-            </Grid>
-        </Container>
+        <Button onClick={login} variant={'outlined'}>Enter with Google</Button>
+
     );
 };
 

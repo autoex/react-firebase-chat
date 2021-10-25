@@ -8,6 +8,7 @@ import {LOGIN_ROUTE} from "../utils/consts";
 import {NavLink} from "react-router-dom";
 import {Context} from "../index";
 import {useAuthState} from "react-firebase-hooks/auth";
+import Login from "./Login";
 
 const NavBar = () => {
     const {auth} = useContext(Context);
@@ -21,9 +22,8 @@ const NavBar = () => {
                         {user ?
                             <Button variant={'outlined'} onClick={()=>auth.signOut()}>Log out</Button>
                             :
-                            <NavLink to={LOGIN_ROUTE}>
-                                <Button variant={'outlined'}>Login</Button>
-                            </NavLink>
+
+                                <Login />
                         }
 
 
