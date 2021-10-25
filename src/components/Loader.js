@@ -11,7 +11,7 @@ const Loader = () => {
             justify={'center'}>
                 <Grid container
                       alignItems={'center'}
-                      justify={'column'}>
+                      justifyContent={'column'}>
                 <div className="lds-ripple">
                     <div></div>
                     <div></div>
