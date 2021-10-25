@@ -1,7 +1,4 @@
 import React, {useContext} from 'react';
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import {Context} from "../index";
 import firebase from "firebase/compat";

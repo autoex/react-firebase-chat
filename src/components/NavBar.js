@@ -4,8 +4,6 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
-import {LOGIN_ROUTE} from "../utils/consts";
-import {NavLink} from "react-router-dom";
 import {Context} from "../index";
 import {useAuthState} from "react-firebase-hooks/auth";
 import Login from "./Login";
